@@ -92,81 +92,70 @@ export default function DashboardPage() {
 
             {/* Section B: Right 4 Columns */}
             <aside className="col-span-12 lg:col-span-4 flex flex-col gap-6">
-                <div className="bg-carbon/5 p-4 border border-carbon/10 mb-2">
-                    <p className="font-mono text-[10px] text-carbon font-bold uppercase tracking-widest flex items-center gap-2">
-                        <span className="h-1.5 w-1.5 bg-teal rounded-full animate-pulse"></span>
-                        Neural Core: Connected
-                    </p>
-                </div>
                 {/* Card 1 */}
                 <Link href="/dashboard/voice" className="block border border-carbon p-6 md:p-8 bg-paper transition-all cursor-pointer group hover:bg-carbon/5">
                     <div className="flex justify-between items-start mb-6">
-                        <span className="material-symbols-outlined text-3xl">mic</span>
-                        <span className="font-mono text-[10px] border border-carbon px-2 py-1">CORE_01</span>
+                        <span className="material-symbols-outlined text-3xl text-teal">mic</span>
+                        <span className="font-mono text-[10px] border border-carbon px-2 py-1">Module 1</span>
                     </div>
-                    <h3 className="font-mono font-bold text-lg mb-4 tracking-tighter uppercase">Voice Core</h3>
-                    <p className="font-display text-sm leading-relaxed text-gray-600">
-                        Capture clinical dictation and extract operational intent with zero-latency speech-to-intent mapping.
+                    <h3 className="font-sans font-black text-lg mb-4 tracking-tight uppercase text-carbon">Voice Core</h3>
+                    <p className="font-sans text-sm leading-relaxed text-gray-600">
+                        Capture clinical dictation and extract structured patient records in real-time.
                     </p>
                     <div className="mt-8 border-t border-carbon pt-4 flex items-center gap-2">
                         <div className="h-1.5 w-1.5 bg-teal"></div>
-                        <span className="font-mono text-[10px] uppercase">Awaiting connection</span>
+                        <span className="font-mono text-[10px] uppercase">Active</span>
                     </div>
                 </Link>
 
-                {/* Card 2: Hover State Equivalent */}
+                {/* Card 2 */}
                 <Link href="/dashboard/document" className="block border border-carbon p-6 md:p-8 bg-carbon text-paper transition-all cursor-pointer shadow-none hover:bg-carbon/90">
                     <div className="flex justify-between items-start mb-6">
                         <span className="material-symbols-outlined text-3xl text-teal">description</span>
-                        <span className="font-mono text-[10px] border border-paper/20 px-2 py-1">CORE_02</span>
+                        <span className="font-mono text-[10px] border border-paper/20 px-2 py-1">Module 2</span>
                     </div>
-                    <h3 className="font-mono font-bold text-lg mb-4 tracking-tighter uppercase">Document Engine</h3>
-                    <p className="font-display text-sm leading-relaxed opacity-80">
-                        Transform physical medical documents into structured records via advanced optical neural character recognition.
+                    <h3 className="font-sans font-black text-lg mb-4 tracking-tight uppercase text-paper">Document Engine</h3>
+                    <p className="font-sans text-sm leading-relaxed opacity-80">
+                        Extract structured clinical JSON from scanned prescriptions and medical notes.
                     </p>
                     <div className="mt-8 border-t border-paper/10 pt-4 flex items-center gap-2">
                         <div className="h-1.5 w-1.5 bg-teal"></div>
-                        <span className="font-mono text-[10px] uppercase">Processing queue: 4</span>
+                        <span className="font-mono text-[10px] uppercase">Active</span>
                     </div>
                 </Link>
 
                 {/* Card 3 */}
                 <Link href="/dashboard/signals" className="block border border-carbon p-6 md:p-8 bg-paper transition-all cursor-pointer group hover:bg-carbon/5">
                     <div className="flex justify-between items-start mb-6">
-                        <span className="material-symbols-outlined text-3xl">hub</span>
-                        <span className="font-mono text-[10px] border border-carbon px-2 py-1">CORE_03</span>
+                        <span className="material-symbols-outlined text-3xl text-teal">hub</span>
+                        <span className="font-mono text-[10px] border border-carbon px-2 py-1">Module 3</span>
                     </div>
-                    <h3 className="font-mono font-bold text-lg mb-4 tracking-tighter uppercase">Signal Network</h3>
-                    <p className="font-display text-sm leading-relaxed text-gray-600">
-                        Monitor aggregated health signals across operational regions to detect early clinical deterioration.
+                    <h3 className="font-sans font-black text-lg mb-4 tracking-tight uppercase text-carbon">Signal Network</h3>
+                    <p className="font-sans text-sm leading-relaxed text-gray-600">
+                        Track regional health alerts across Kolkata neighborhoods to detect outbreak signals.
                     </p>
                     <div className="mt-8 border-t border-carbon pt-4 flex items-center gap-2">
                         <div className="h-1.5 w-1.5 bg-teal"></div>
-                        <span className="font-mono text-[10px] uppercase">Global Sync Active</span>
+                        <span className="font-mono text-[10px] uppercase">Active</span>
                     </div>
                 </Link>
 
                 {/* Card 4: Workflow Queue */}
                 <Link href="/dashboard/workflow" className="block border border-carbon p-6 md:p-8 bg-paper transition-all cursor-pointer group hover:bg-teal hover:border-teal hover:text-white">
                     <div className="flex justify-between items-start mb-6">
-                        <span className="material-symbols-outlined text-3xl group-hover:text-white">inventory_2</span>
-                        <span className="font-mono text-[10px] border border-carbon group-hover:border-white/40 px-2 py-1">CORE_04</span>
+                        <span className="material-symbols-outlined text-3xl text-teal group-hover:text-white">inventory_2</span>
+                        <span className="font-mono text-[10px] border border-carbon group-hover:border-white/40 px-2 py-1">Module 4</span>
                     </div>
-                    <h3 className="font-mono font-bold text-lg mb-4 tracking-tighter uppercase">Workflow Queue</h3>
-                    <p className="font-display text-sm leading-relaxed text-gray-600 group-hover:text-white/80">
-                        Human-in-the-loop authorization for AI-proposed actions. Audit neural rationalization before clinical commitment.
+                    <h3 className="font-sans font-black text-lg mb-4 tracking-tight uppercase text-carbon group-hover:text-white">Workflow Queue</h3>
+                    <p className="font-sans text-sm leading-relaxed text-gray-600 group-hover:text-white/80">
+                        Clinician approval queue for AI-proposed actions and medication reviews.
                     </p>
                     <div className="mt-8 border-t border-carbon group-hover:border-white/10 pt-4 flex items-center gap-2">
-                        <div className={`h-1.5 w-1.5 ${workflowCount > 0 ? 'bg-red-500 animate-pulse' : 'bg-teal'}`}></div>
+                        <div className="h-1.5 w-1.5 bg-teal group-hover:bg-white"></div>
                         <span className="font-mono text-[10px] uppercase font-bold tracking-widest">
-                            {workflowCount > 0 ? `${workflowCount} PROPOSED_ACTIONS` : "ALL_SIGNALS_CLEAR"}
+                            {workflowCount > 0 ? `${workflowCount} Actions Pending` : "Queue Empty"}
                         </span>
                     </div>
-                    {workflowCount > 0 && (
-                        <div className="mt-2 text-[8px] font-mono text-red-500 font-bold uppercase tracking-widest animate-pulse">
-                            [ ACTION REQUIRED ]
-                        </div>
-                    )}
                 </Link>
             </aside>
         </div>

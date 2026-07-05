@@ -200,12 +200,7 @@ export default function DocumentEnginePage() {
                         Dashboard
                     </Link>
                     <span className="material-symbols-outlined text-carbon">grid_view</span>
-                    <h2 className="font-mono font-bold text-sm tracking-widest uppercase">Forensic Document Engine v2.0</h2>
-                </div>
-                <div className="flex gap-6 font-mono text-[10px] tracking-widest uppercase font-bold text-gray-400">
-                    <span className="border-r border-carbon/10 pr-6">Status: <span className="text-teal">Online</span></span>
-                    <span className="border-r border-carbon/10 pr-6">OCR: <span className="text-teal">Azure Doc Intelligence</span></span>
-                    <span>Engine: <span className="text-teal">General-Document Neural</span></span>
+                    <h2 className="font-sans font-black text-sm tracking-tight uppercase text-carbon">Prescription Document Processor</h2>
                 </div>
             </div>
 
@@ -431,33 +426,14 @@ export default function DocumentEnginePage() {
                             </div>
                         )}
 
-                        <div className="mt-auto pt-6 border-t border-gray-100">
-                            <div className="grid grid-cols-2 gap-4">
-                                <div className="space-y-1">
-                                    <p className="font-mono text-[9px] font-bold text-carbon/40 uppercase tracking-widest leading-none">Extraction Core</p>
-                                    <p className="font-mono text-[10px] text-teal font-medium uppercase">{extractedData?.metadata.ocr_engine || "Azure Document Intelligence v4.0"}</p>
-                                </div>
-                                <div className="space-y-1">
-                                    <p className="font-mono text-[9px] font-bold text-carbon/40 uppercase tracking-widest leading-none">Reasoning Node</p>
-                                    <p className="font-mono text-[10px] text-teal font-medium uppercase">{extractedData?.metadata.reasoning_model || "Gemini 3.1 Flash Lite"}</p>
-                                </div>
-                                <div className="space-y-1">
-                                    <p className="font-mono text-[9px] font-bold text-carbon/40 uppercase tracking-widest leading-none">Extraction Schema</p>
-                                    <p className="font-mono text-[10px] text-teal font-medium uppercase">{extractedData?.metadata.schema || "Clinical Schema v1.2"}</p>
-                                </div>
-                                <div className="space-y-1">
-                                    <p className="font-mono text-[9px] font-bold text-carbon/40 uppercase tracking-widest leading-none">Security Encryption</p>
-                                    <p className="font-mono text-[10px] text-teal font-medium uppercase">AES-256 GCM Forensic</p>
-                                </div>
-                            </div>
-                        </div>
+
                     </div>
 
                     {/* Event Logs */}
                     <div className="border border-carbon bg-white flex flex-col">
-                        <div className="bg-carbon/5 border-b border-carbon/10 px-4 py-2 font-serif text-base italic text-carbon flex justify-between">
-                            FORENSIC EVENT LOGS
-                            <span className="font-mono text-[10px] opacity-50 not-italic pt-1">{statusLogs.length} SIGNALS</span>
+                        <div className="bg-carbon/5 border-b border-carbon/10 px-4 py-2 font-sans text-sm font-bold text-carbon flex justify-between">
+                            Session Logs
+                            <span className="font-mono text-[10px] opacity-50 pt-0.5">{statusLogs.length} Events</span>
                         </div>
                         <div className="p-4 font-mono text-[9px] text-gray-500 space-y-2 h-[120px] overflow-y-auto custom-scrollbar">
                             {statusLogs.length === 0 ? (

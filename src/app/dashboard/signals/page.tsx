@@ -121,16 +121,7 @@ export default function SignalNetworkPage() {
                     </Link>
                     <span className="font-sans font-black text-xs md:text-sm tracking-tight uppercase">Maitri Clinic | Signal Network</span>
                 </div>
-                <div className="hidden md:flex items-center gap-6 font-mono text-[10px] font-bold">
-                    <div className="flex items-center gap-2">
-                        <span className="size-2 bg-teal rounded-full animate-ping"></span>
-                        <span>NETWORK STATUS: <span className="text-teal">ACTIVE</span></span>
-                    </div>
-                    <div className="border-l border-slate-300 h-4"></div>
-                    <span>SIGNALS DETECTED: {signals.length}</span>
-                    <div className="border-l border-slate-300 h-4"></div>
-                    <span>DATA STREAM: <span className="text-teal">LIVE</span></span>
-                </div>
+
             </header>
 
             <main className="flex-grow flex flex-col md:flex-row overflow-hidden relative graph-paper">
@@ -322,34 +313,7 @@ export default function SignalNetworkPage() {
                             </div>
                         )}
 
-                        {/* Outbreak Buffer List */}
-                        <div className="border-t border-slate-100 pt-4">
-                            <span className="font-mono text-[9px] text-gray-400 uppercase tracking-widest block mb-3 font-bold">Local Outbreaks List</span>
-                            <div className="space-y-3">
-                                {signals.map((sig) => (
-                                    <div
-                                        key={sig.id}
-                                        onClick={() => handleSignalSelect(sig)}
-                                        className={`border p-3 cursor-pointer transition-colors ${
-                                            selectedSignal?.id === sig.id
-                                                ? "bg-slate-50 border-black"
-                                                : "border-slate-200 hover:border-black opacity-80"
-                                        }`}
-                                    >
-                                        <div className="flex justify-between items-start mb-2">
-                                            <span className="font-mono text-[10px] font-bold uppercase tracking-tight">{typeLabelMap[sig.type]}</span>
-                                            <span className={`text-[8px] font-mono font-bold px-1.5 py-0.5 border ${
-                                                sig.severity === "URGENT" ? "border-red-500 text-red-500 bg-red-50" : "border-slate-300 text-slate-500"
-                                            }`}>{sig.severity}</span>
-                                        </div>
-                                        <div className="flex justify-between font-mono text-[9px] text-slate-500">
-                                            <span>ZIP: {sig.zipCode} ({zipCoordinates[sig.zipCode]?.name.split("/")[0]})</span>
-                                            <span className="font-bold text-black">{sig.cases} cases</span>
-                                        </div>
-                                    </div>
-                                ))}
-                            </div>
-                        </div>
+
                     </div>
                 </aside>
             </main>

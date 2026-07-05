@@ -319,14 +319,14 @@ export default function VoiceCorePage() {
                                         : "bg-white hover:bg-carbon hover:text-white text-carbon"
                                     } ${isProcessing ? "opacity-50 cursor-not-allowed" : ""}`}
                             >
-                                <span className={`material-symbols-outlined text-4xl mb-4 ${isRecording ? "animate-pulse" : "group-hover:scale-110 transition-transform"}`}>
+                                <span className={`material-symbols-outlined text-4xl mb-4 ${isRecording ? "" : "group-hover:scale-110 transition-transform"}`}>
                                     {isSessionActive ? "mic" : isRecording ? "hearing" : "mic_none"}
                                 </span>
-                                <span className="font-mono font-bold tracking-widest uppercase text-xs text-center">
-                                    {isSessionActive ? "Active Session" : isRecording ? "Listening" : "Initialize Audio"}
+                                <span className="font-sans font-bold tracking-wider uppercase text-xs text-center">
+                                    {isSessionActive ? "Active Session" : isRecording ? "Listening" : "Start Recording"}
                                 </span>
-                                <span className="font-display text-[10px] opacity-50 mt-2 text-center">
-                                    {isSessionActive ? "Say 'Over and Out' to end" : isRecording ? "Say 'Start Now' to begin" : "Click to establish feed"}
+                                <span className="font-sans text-[10px] opacity-50 mt-2 text-center">
+                                    {isSessionActive ? "Say 'Over and Out' to end" : isRecording ? "Say 'Start Now' to begin" : "Click to start microphone"}
                                 </span>
                             </button>
                         </div>
@@ -334,7 +334,7 @@ export default function VoiceCorePage() {
                         {/* Waveform container */}
                         <div className="w-full md:w-2/3 border border-carbon bg-white flex items-center justify-center relative min-h-[160px]">
                             <div className="absolute top-2 left-4 font-mono text-[10px] font-bold text-gray-400 tracking-widest">
-                                AUDIO STREAM {isRecording ? "(LIVE)" : "(OFFLINE)"}
+                                MICROPHONE INPUT {isRecording ? "(ACTIVE)" : "(IDLE)"}
                             </div>
 
                             {/* Visual Waveform Animation */}
@@ -346,7 +346,7 @@ export default function VoiceCorePage() {
                                     >
                                         <span className="material-symbols-outlined text-3xl">mic</span>
                                     </button>
-                                    <span className="text-[10px] font-mono font-bold text-teal mt-2 animate-pulse tracking-widest">TAP TO INITIALIZE MATRIX</span>
+                                    <span className="text-[10px] font-sans font-bold text-teal mt-2 tracking-wider">CLICK TO RECORD</span>
                                 </div>
                             ) : (
                                 <div className="flex items-center gap-1.5 h-24 px-6 mb-4">
