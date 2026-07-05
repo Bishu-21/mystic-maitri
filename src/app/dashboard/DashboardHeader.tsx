@@ -31,14 +31,6 @@ export default function DashboardHeader() {
                 </div>
 
                 <div className="flex items-center gap-4 md:gap-6 font-mono text-[10px] md:text-xs w-full md:w-auto justify-between md:justify-end">
-                    <div className="hidden md:flex items-center gap-2">
-                        <span className="h-1.5 w-1.5 bg-teal rounded-full"></span>
-                        <span className="text-carbon uppercase">System: Nominal</span>
-                    </div>
-                    <div className="hidden md:flex items-center gap-2">
-                        <span className="h-1.5 w-1.5 bg-teal rounded-full"></span>
-                        <span className="text-carbon uppercase">Database: Connected</span>
-                    </div>
                     <button
                         onClick={handleLogout}
                         className="font-mono text-[10px] font-bold tracking-widest uppercase hover:bg-carbon hover:text-paper transition-all border border-carbon px-4 py-1.5 bg-paper rounded ml-auto cursor-pointer"

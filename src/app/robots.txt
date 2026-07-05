@@ -3,4 +3,4 @@ Allow: /
 Disallow: /api/
 Disallow: /dashboard/workflow
 
-Sitemap: https://maitri-clinic.vercel.app/sitemap.xml
+Sitemap: https://mystic-maitri.vercel.app/sitemap.xml

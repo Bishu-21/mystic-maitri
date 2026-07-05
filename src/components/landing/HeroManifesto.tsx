@@ -12,19 +12,12 @@ export default function HeroManifesto() {
                     A Smarter Clinical Portal
                 </h1>
                 <div className="space-y-6">
-                    <div className="font-mono text-sm tracking-tight uppercase max-w-xl leading-relaxed text-carbon">
-                        <span className="flex items-center gap-2 mb-2">
-                            <span className="w-2 h-2 rounded-full bg-teal"></span>
-                            System Status: <span className="text-teal font-bold">Online</span>
-                        </span>
+                    <div className="text-sm tracking-tight max-w-xl leading-relaxed text-carbon">
                         <p className="opacity-80">
                             Maitri is a secure, human-in-the-loop clinical coordinator that digitizes doctor prescriptions, records voice dictation, and visualizes regional health alerts.
                         </p>
                     </div>
-                    <p className="text-xs font-mono tracking-widest uppercase text-slate-500">
-                        CLINICIAN AUDITED WORKFLOWS / SECURE COMPLIANT ENGINE
-                    </p>
-                    <div className="pt-8">
+                    <div className="pt-4">
                         <Link href="/dashboard" className="inline-block bg-carbon text-paper text-xs font-bold px-10 py-4 rounded-full hover:bg-teal transition-all tracking-widest uppercase font-mono shadow-sm">
                             Access Dashboard
                         </Link>
