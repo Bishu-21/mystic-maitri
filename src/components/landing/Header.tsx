@@ -4,11 +4,11 @@ export default function Header() {
     return (
         <header className="border-b border-carbon bg-paper/80 backdrop-blur-sm flex justify-between items-center px-8 py-4 sticky top-0 z-50">
             <div className="flex items-center gap-3">
-                <div className="size-6 bg-carbon flex items-center justify-center">
-                    <span className="material-symbols-outlined text-paper text-sm">terminal</span>
+                <div className="size-6 bg-teal flex items-center justify-center rounded">
+                    <span className="material-symbols-outlined text-paper text-sm">medical_services</span>
                 </div>
-                <span className="font-mono text-xl font-bold uppercase tracking-tighter text-carbon">Mystic</span>
-                <span className="text-xs text-teal font-mono tracking-widest hidden md:inline ml-4 border-l border-carbon pl-4">NEURAL CORE ACTIVE</span>
+                <span className="font-sans text-xl font-black uppercase tracking-tight text-carbon">Maitri</span>
+                <span className="text-xs text-teal font-mono tracking-widest hidden md:inline ml-4 border-l border-carbon pl-4">CLINICAL SYSTEM ONLINE</span>
             </div>
 
             <div className="flex items-center gap-8">

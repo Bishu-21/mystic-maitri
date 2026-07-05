@@ -24,26 +24,26 @@ export default function DashboardHeader() {
                 <div className="flex items-center gap-3 w-full md:w-auto justify-between md:justify-start">
                     <div className="flex items-center gap-2">
                         <span className="material-symbols-outlined text-teal">analytics</span>
-                        <h1 className="font-mono text-[10px] md:text-sm font-bold tracking-tight uppercase max-w-[200px] md:max-w-none">
-                            Mystic Maitri Clinical Coordination System
+                        <h1 className="font-sans text-sm font-black tracking-tight uppercase max-w-[200px] md:max-w-none text-carbon">
+                            Maitri Clinical Portal
                         </h1>
                     </div>
                 </div>
 
                 <div className="flex items-center gap-4 md:gap-6 font-mono text-[10px] md:text-xs w-full md:w-auto justify-between md:justify-end">
                     <div className="hidden md:flex items-center gap-2">
-                        <span className="h-2 w-2 bg-teal rounded-full"></span>
-                        <span className="text-carbon">NODE STATUS: ACTIVE</span>
+                        <span className="h-1.5 w-1.5 bg-teal rounded-full"></span>
+                        <span className="text-carbon uppercase">System: Nominal</span>
                     </div>
                     <div className="hidden md:flex items-center gap-2">
-                        <span className="h-2 w-2 bg-teal rounded-full"></span>
-                        <span className="text-carbon">NEURAL CORE: ONLINE</span>
+                        <span className="h-1.5 w-1.5 bg-teal rounded-full"></span>
+                        <span className="text-carbon uppercase">Database: Connected</span>
                     </div>
                     <button
                         onClick={handleLogout}
-                        className="font-mono text-[10px] font-bold tracking-widest uppercase hover:text-teal transition-colors border border-carbon px-3 py-1 bg-paper ml-auto"
+                        className="font-mono text-[10px] font-bold tracking-widest uppercase hover:bg-carbon hover:text-paper transition-all border border-carbon px-4 py-1.5 bg-paper rounded ml-auto cursor-pointer"
                     >
-                        [ END SESSION ]
+                        Sign Out
                     </button>
                 </div>
             </div>
