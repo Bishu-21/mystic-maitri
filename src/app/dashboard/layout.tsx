@@ -1,9 +1,6 @@
-export const dynamic = "force-dynamic";
-
 import { redirect } from "next/navigation";
 import { getLoggedInUser } from "@/actions/auth";
 import DashboardHeader from "@/app/dashboard/DashboardHeader";
-import StatusTicker from "@/components/dashboard/StatusTicker";
 
 export default async function DashboardLayout({
     children,
@@ -26,13 +23,10 @@ export default async function DashboardLayout({
                 {/* Extracted Client Header (so Logout works) */}
                 <DashboardHeader />
 
-                {/* Main Content - Increased PB to prevent overlap with fixed footer */}
-                <main className="flex-grow container mx-auto px-4 md:px-6 py-8 md:py-12 pb-24 md:pb-32">
+                {/* Main Content */}
+                <main className="flex-grow container mx-auto px-4 md:px-6 py-8 md:py-12 pb-12">
                     {children}
                 </main>
-
-                {/* Real-time Status Ticker (Fixed Bottom) */}
-                <StatusTicker />
             </div>
         </div>
     );
