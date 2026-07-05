@@ -39,7 +39,7 @@ export const redis = {
         }
         return (localCache[key] as T) || null;
     },
-    set: async (key: string, value: any, options?: { ex?: number }): Promise<void> => {
+    set: async (key: string, value: any, options?: any): Promise<void> => {
         try {
             if (redisClient) {
                 await redisClient.set(key, value, options);
