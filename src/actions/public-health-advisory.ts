@@ -13,8 +13,8 @@ export async function generateOutbreakAdvisory(
         if (!geminiKey) throw new Error("Gemini API key not found");
 
         const genAI = new GoogleGenerativeAI(geminiKey);
-        // Using gemma-4-26b-a4b-it as requested
-        const model = genAI.getGenerativeModel({ model: "gemma-4-26b-a4b-it" });
+        // Using gemma-4-31b-it as requested
+        const model = genAI.getGenerativeModel({ model: "gemma-4-31b-it" });
 
         // Map ZIP to local neighborhood name for extra authenticity
         const neighborhoodMap: Record<string, string> = {

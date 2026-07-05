@@ -8,8 +8,8 @@ export async function askClinicalAssistant(query: string) {
         if (!geminiKey) throw new Error("Gemini API key not found");
 
         const genAI = new GoogleGenerativeAI(geminiKey);
-        // Using gemma-4-26b-a4b-it as requested
-        const model = genAI.getGenerativeModel({ model: "gemma-4-26b-a4b-it" });
+        // Using gemma-4-31b-it as requested
+        const model = genAI.getGenerativeModel({ model: "gemma-4-31b-it" });
 
         const prompt = `Act as a senior clinical assistant powered by Gemma 4. Provide concise, structured medical information for the following query.
         

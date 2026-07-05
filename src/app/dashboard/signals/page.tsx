@@ -312,7 +312,7 @@ export default function SignalNetworkPage() {
 
                                     <div className="text-[7px] text-gray-500 border-t border-white/5 pt-2 uppercase tracking-widest flex justify-between">
                                         <span>Node: KMC-Surveillance</span>
-                                        <span>Gemma 4 Agent Active</span>
+                                        <span>Gemma-4-31b-it Active</span>
                                     </div>
                                 </div>
                             </div>
