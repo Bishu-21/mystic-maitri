@@ -1,7 +1,6 @@
 import Header from "@/components/landing/Header";
 import HeroManifesto from "@/components/landing/HeroManifesto";
 import NavigationCards from "@/components/landing/NavigationCards";
-import SystemTicker from "@/components/landing/SystemTicker";
 
 export default function Home() {
   return (
@@ -9,7 +8,7 @@ export default function Home() {
       <div className="w-full bg-carbon text-paper border-b border-carbon">
         <div className="container mx-auto px-4 py-2">
           <p className="text-center text-[10px] font-mono tracking-[0.2em] uppercase font-bold text-paper/80">
-            MYSTIC MAITRI | BRAINWARE AI HACKATHON 2026 | POWERED BY AZURE + GEMINI
+            MYSTIC MAITRI | BUILD WITH GEMMA: KOLKATA | POWERED BY GEMMA 4
           </p>
         </div>
       </div>
@@ -24,11 +23,6 @@ export default function Home() {
           <NavigationCards />
         </div>
       </main>
-
-      {/* Padding space for ticker */}
-      <div className="h-10"></div>
-
-      <SystemTicker />
     </div>
   );
 }

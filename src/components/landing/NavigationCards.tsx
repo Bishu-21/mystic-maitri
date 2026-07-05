@@ -13,7 +13,6 @@ export default function NavigationCards() {
             id: "02",
             title: "Document Engine",
             desc: "Extract structured data from scanned reports and handwritten medical notes.",
-            meta: "[LAST PARSED: LAB_REPORT_092.PDF]",
             icon: "document_scanner",
             href: "/dashboard/document"
         },
