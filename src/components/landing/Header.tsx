@@ -12,8 +12,8 @@ export default function Header() {
             </div>
 
             <div className="flex items-center gap-8">
-                <Link href="/auth" className="px-6 py-2 border border-carbon rounded-full font-mono text-xs uppercase tracking-widest font-bold text-carbon hover:bg-carbon hover:text-paper transition-colors block text-center">
-                    AUTHORIZE
+                <Link href="/dashboard" className="px-6 py-2 border border-carbon rounded-full font-mono text-xs uppercase tracking-widest font-bold text-carbon hover:bg-carbon hover:text-paper transition-all block text-center cursor-pointer shadow-sm">
+                    ENTER PORTAL
                 </Link>
             </div>
         </header>
