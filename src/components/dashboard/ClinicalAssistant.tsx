@@ -119,7 +119,7 @@ export default function ClinicalAssistant() {
                     type="text"
                     value={input}
                     onChange={(e) => setInput(e.target.value)}
-                    placeholder="Ask Mystic..."
+                    placeholder="Ask Maitri..."
                     className="flex-1 bg-transparent font-mono text-[10px] outline-none px-2 uppercase"
                 />
                 <button

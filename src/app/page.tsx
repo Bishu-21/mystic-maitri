@@ -8,7 +8,7 @@ export default function Home() {
       <div className="w-full bg-carbon text-paper border-b border-carbon">
         <div className="container mx-auto px-4 py-2">
           <p className="text-center text-[10px] font-mono tracking-[0.2em] uppercase font-bold text-paper/80">
-            MYSTIC MAITRI | BUILD WITH GEMMA: KOLKATA | POWERED BY GEMMA 4
+            MAITRI CLINICAL PORTAL | BUILD WITH GEMMA: KOLKATA | POWERED BY GEMMA 4
           </p>
         </div>
       </div>

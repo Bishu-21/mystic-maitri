@@ -254,7 +254,7 @@ export default function VoiceCorePage() {
                             Dashboard
                         </Link>
                         <span className="material-symbols-outlined text-teal text-xl">analytics</span>
-                        <h1 className="font-mono font-bold text-lg tracking-tighter uppercase text-carbon">Mystic Maitri | Voice Core</h1>
+                        <h1 className="font-sans font-black text-lg tracking-tight uppercase text-carbon">Maitri Clinic | Voice Core</h1>
                     </div>
 
                     <div className="flex items-center gap-4 text-carbon font-mono text-[10px] sm:text-xs">

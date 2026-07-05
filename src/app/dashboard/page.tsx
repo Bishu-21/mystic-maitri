@@ -52,7 +52,7 @@ export default function DashboardPage() {
                         {workflowCount > 0 ? "AI Action Proposed" : "Awaiting Clinical Input"}
                     </h2>
                     <p className="font-mono text-sm max-w-xl leading-relaxed text-gray-600 uppercase tracking-wide">
-                        {workflowCount > 0 ? "Awaiting human authorization for proposed clinical adjustments." : "Mystic Maitri captures voice, documents, and operational signals. All system actions require human authorization."}
+                        {workflowCount > 0 ? "Awaiting human authorization for proposed clinical adjustments." : "Maitri Clinic captures voice, documents, and operational signals. All system actions require human authorization."}
                     </p>
                 </div>
 

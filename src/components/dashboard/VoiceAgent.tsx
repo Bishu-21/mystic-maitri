@@ -166,7 +166,7 @@ export default function VoiceAgent() {
                         <div className="flex flex-col gap-2">
                             <div className="flex items-center gap-2">
                                 <span className="h-1.5 w-1.5 bg-teal rounded-full animate-pulse"></span>
-                                <span className="font-mono text-[8px] font-bold text-teal uppercase tracking-widest">Mystic AI responding...</span>
+                                <span className="font-mono text-[8px] font-bold text-teal uppercase tracking-widest">Maitri AI responding...</span>
                             </div>
                             <div className="bg-carbon text-paper p-4 border border-carbon shadow-[4px_4px_0px_0px_rgba(20,184,166,0.3)]">
                                 <p className="font-serif italic text-sm leading-relaxed">

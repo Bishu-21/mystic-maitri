@@ -112,7 +112,7 @@ export default function AuthPage() {
             <div className="w-full bg-carbon text-paper border-b border-carbon z-50">
                 <div className="container mx-auto px-4 py-2">
                     <p className="text-center text-[10px] font-mono tracking-[0.2em] uppercase font-bold text-paper/80">
-                        MYSTIC MAITRI | BRAINWARE AI HACKATHON 2026 | POWERED BY AZURE + GEMINI
+                        MAITRI CLINICAL PORTAL | POWERED BY AZURE + GEMINI
                     </p>
                 </div>
             </div>
@@ -123,7 +123,7 @@ export default function AuthPage() {
                     <div className="size-6 bg-carbon flex items-center justify-center text-paper group-hover:bg-teal transition-colors">
                         <span className="material-symbols-outlined text-sm">shield_lock</span>
                     </div>
-                    <h1 className="text-lg md:text-xl font-bold tracking-tighter uppercase text-carbon">MYSTIC</h1>
+                    <h1 className="text-lg md:text-xl font-bold tracking-tighter uppercase text-carbon">MAITRI</h1>
                 </Link>
                 <div className="font-mono text-[10px] uppercase tracking-widest text-carbon/60 hidden md:block">
                     v4.2.0 // auth_node_01
@@ -140,7 +140,7 @@ export default function AuthPage() {
                             Secure<br />Healthcare<br />Intelligence.
                         </h2>
                         <p className="max-w-md text-sm leading-relaxed uppercase tracking-tight text-carbon/80">
-                            Mystic Maitri operates as a human-authorized clinical coordination layer.
+                            Maitri Clinical Portal operates as a human-authorized clinical coordination layer.
                             All AI-generated actions require explicit verification before execution.
                         </p>
                     </div>

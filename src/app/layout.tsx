@@ -7,7 +7,7 @@ const playfair = Playfair_Display({ subsets: ["latin"], weight: ["400", "700"], 
 const jetbrains = JetBrains_Mono({ subsets: ["latin"], weight: ["400", "500", "700"], variable: "--font-jetbrains" });
 
 export const metadata: Metadata = {
-  title: "Mystic Maitri - AI Coordination Layer",
+  title: "Maitri Clinical Portal - AI Workflow Coordinator",
   description: "Connecting voice, documents, and clinical workflows with high-fidelity, human-in-the-loop multimodal agents.",
   icons: {
     icon: "/icon.svg",

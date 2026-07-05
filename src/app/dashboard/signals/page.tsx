@@ -119,7 +119,7 @@ export default function SignalNetworkPage() {
                         <span className="material-symbols-outlined text-[14px] group-hover:-translate-x-0.5 transition-transform">arrow_back</span>
                         Dashboard
                     </Link>
-                    <span className="font-mono text-xs md:text-sm font-bold tracking-tighter uppercase">Mystic Maitri | Signal Network</span>
+                    <span className="font-sans font-black text-xs md:text-sm tracking-tight uppercase">Maitri Clinic | Signal Network</span>
                 </div>
                 <div className="hidden md:flex items-center gap-6 font-mono text-[10px] font-bold">
                     <div className="flex items-center gap-2">
