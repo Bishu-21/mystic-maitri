@@ -53,7 +53,7 @@ export default function ClinicalAssistant() {
                 </div>
                 <div className="flex items-center gap-1">
                     <span className="h-1 w-1 bg-teal rounded-full animate-pulse"></span>
-                    <span className="font-mono text-[8px] opacity-40 uppercase">gemma-4-31b-it</span>
+                    <span className="font-mono text-[8px] opacity-40 uppercase">Active</span>
                 </div>
             </div>
 

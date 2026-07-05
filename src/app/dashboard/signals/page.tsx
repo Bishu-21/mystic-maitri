@@ -238,7 +238,7 @@ export default function SignalNetworkPage() {
                 <aside className="w-full md:w-96 border-t md:border-t-0 md:border-l border-black bg-white flex flex-col z-50 h-auto md:h-full">
                     {/* Top Signal Details */}
                     <div className="p-6 border-b border-black">
-                        <h2 className="font-serif italic font-bold text-2xl">Signal Feed</h2>
+                        <h2 className="font-sans font-bold text-2xl uppercase tracking-tight">Signal Feed</h2>
                         <p className="font-mono text-[10px] text-slate-400 mt-1 uppercase tracking-widest">Kolkata Outbreak Buffer</p>
                     </div>
 
@@ -312,7 +312,7 @@ export default function SignalNetworkPage() {
 
                                     <div className="text-[7px] text-gray-500 border-t border-white/5 pt-2 uppercase tracking-widest flex justify-between">
                                         <span>Node: KMC-Surveillance</span>
-                                        <span>Gemma-4-31b-it Active</span>
+                                        <span>Clinical Advisor Active</span>
                                     </div>
                                 </div>
                             </div>

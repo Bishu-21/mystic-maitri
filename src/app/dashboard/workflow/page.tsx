@@ -121,7 +121,7 @@ export default function WorkflowQueuePage() {
                                         </td>
                                         <td className="px-4 py-4">
                                             <div className="flex flex-col">
-                                                <span className="font-serif italic text-base leading-tight">{item.title}</span>
+                                                <span className="font-sans font-bold text-sm text-carbon uppercase">{item.title}</span>
                                                 <span className="text-[10px] text-gray-400 font-mono mt-0.5 truncate max-w-[200px]">{item.description}</span>
                                             </div>
                                         </td>

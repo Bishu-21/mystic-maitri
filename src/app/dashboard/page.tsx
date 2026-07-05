@@ -48,8 +48,8 @@ export default function DashboardPage() {
             {/* Section A: Left 8 Columns */}
             <section className="col-span-12 lg:col-span-8 flex flex-col gap-12">
                 <div className="flex flex-col gap-6">
-                    <h2 className="font-serif italic text-5xl md:text-[90px] leading-[1.1] tracking-tighter text-carbon">
-                        {workflowCount > 0 ? "AI action proposed." : "Awaiting clinical input."}
+                    <h2 className="font-sans font-black text-4xl md:text-6xl tracking-tight text-carbon uppercase">
+                        {workflowCount > 0 ? "AI Action Proposed" : "Awaiting Clinical Input"}
                     </h2>
                     <p className="font-mono text-sm max-w-xl leading-relaxed text-gray-600 uppercase tracking-wide">
                         {workflowCount > 0 ? "Awaiting human authorization for proposed clinical adjustments." : "Mystic Maitri captures voice, documents, and operational signals. All system actions require human authorization."}

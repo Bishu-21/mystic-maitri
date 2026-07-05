@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /dashboard/workflow
+
+Sitemap: https://mystic-maitri.vercel.app/sitemap.xml
