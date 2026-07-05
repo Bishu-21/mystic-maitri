@@ -162,8 +162,7 @@ export default function VoiceCorePage() {
             rc.recognizing = (s, e) => {
                 const txt = e.result.text;
                 const clean = txt.replace(/start now/gi, "").replace(/over and out/gi, "").trim();
-                if (isSessionActiveRef.current) setInterimTranscript(clean);
-                if (txt.toLowerCase().includes("start now") && !isSessionActiveRef.current) logStatus("TRIGGER: START NOW");
+                setInterimTranscript(clean);
             };
 
             rc.recognized = (s, e) => {
@@ -174,36 +173,8 @@ export default function VoiceCorePage() {
                     else if (lang) logStatus(`LANG: ${lang} | ${raw.substring(0, 10)}...`);
                     const clean = raw.replace(/start now/gi, "").replace(/over and out/gi, "").trim();
 
-                    if (raw.toLowerCase().includes("start now")) {
-                        logStatus("SESSION STARTED");
-                        isSessionActiveRef.current = true;
-                        setIsSessionActive(true);
-                        setTranscript(clean);
-                        setInterimTranscript("");
-                        if (!clean) return;
-                    }
-
-                    if (isSessionActiveRef.current && clean && !raw.toLowerCase().includes("start now")) {
+                    if (clean) {
                         setTranscript(p => (p + " " + clean).trim());
-                    }
-
-                    if (raw.toLowerCase().includes("over and out") && isSessionActiveRef.current) {
-                        logStatus("TERMINAL TRIGGER detected");
-                        isSessionActiveRef.current = false;
-                        setIsSessionActive(false);
-
-                        // Hackathon Polish: Add artificial analysis delay for impact
-                        setIsAnalyzing(true);
-                        logStatus("NEURAL CORE: ANALYZING INTENT...");
-
-                        setTimeout(() => {
-                            setIsAnalyzing(false);
-                            setTranscript(p => {
-                                const full = (p.includes(clean) ? p : p + " " + clean).trim();
-                                processIntent(full);
-                                return full;
-                            });
-                        }, 1500);
                     }
                 }
             };
@@ -211,7 +182,9 @@ export default function VoiceCorePage() {
             await navigator.mediaDevices.getUserMedia({ audio: true });
             rc.startContinuousRecognitionAsync(() => {
                 setIsRecording(true);
-                logStatus("SYSTEM ACTIVE");
+                setIsSessionActive(true);
+                isSessionActiveRef.current = true;
+                logStatus("SESSION STARTED");
             }, e => {
                 logStatus(`ERROR: ${e}`);
             });
@@ -225,10 +198,18 @@ export default function VoiceCorePage() {
             recognizerRef.current.stopContinuousRecognitionAsync(
                 () => {
                     setIsRecording(false);
-                    setIsSessionActive(false); // Reset session state
-                    isSessionActiveRef.current = false; // Reset Ref
+                    setIsSessionActive(false);
+                    isSessionActiveRef.current = false;
                     setInterimTranscript("");
                     logStatus("SESSION TERMINATED");
+
+                    // Trigger intent extraction on stop if we have a transcript
+                    setTranscript(currentTranscript => {
+                        if (currentTranscript.trim()) {
+                            processIntent(currentTranscript);
+                        }
+                        return currentTranscript;
+                    });
                 },
                 (err) => {
                     console.error(err);
@@ -531,7 +512,7 @@ export default function VoiceCorePage() {
                                         <div className="pt-4 flex justify-between items-center opacity-30">
                                             <div className="flex items-center gap-1">
                                                 <span className="material-symbols-outlined text-[10px]">model_training</span>
-                                                <span className="text-[8px] font-mono font-bold uppercase">LLM: Gemini-2.0-Flash</span>
+                                                <span className="text-[8px] font-mono font-bold uppercase">LLM: Gemma 4</span>
                                             </div>
                                             <div className="flex items-center gap-1">
                                                 <span className="material-symbols-outlined text-[10px]">transcribe</span>
