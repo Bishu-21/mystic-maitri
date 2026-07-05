@@ -1,0 +1,22 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Outer Box -->
+  <rect x="60" y="60" width="392" height="300" rx="12" stroke="black" stroke-width="24"/>
+  
+  <!-- Waveform Line -->
+  <path d="M40 210 H140 L170 140 L220 320 L270 80 L320 280 L350 210 H472" stroke="black" stroke-width="24" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- Medical Cross -->
+  <path d="M360 210 V140 M360 210 V280 M360 210 H290 M360 210 H430" stroke="white" stroke-width="40" stroke-linecap="square"/>
+  <path d="M400 210 V140 M400 210 V280 M400 210 H330 M400 210 H470" stroke="none" fill="none" />
+  
+  <!-- Re-drawing Cross to match image exactly -->
+  <path d="M370 170 H430 V250 H370 Z" fill="white" />
+  <rect x="365" y="175" width="70" height="70" fill="white" />
+  
+  <!-- Actually the cross is black in the image, on white background -->
+  <rect x="290" y="160" width="160" height="100" fill="white" />
+  <path d="M370 150 V270 M310 210 H430" stroke="black" stroke-width="24" stroke-linecap="round" />
+
+  <!-- Mystic Text -->
+  <text x="256" y="460" font-family="monospace" font-size="48" font-weight="900" text-anchor="middle" fill="black" letter-spacing="8">MYSTIC</text>
+</svg>
