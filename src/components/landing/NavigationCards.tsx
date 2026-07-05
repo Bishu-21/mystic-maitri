@@ -53,11 +53,6 @@ export default function NavigationCards() {
                     </div>
 
                     <div className="mt-8">
-                        {card.meta && (
-                            <p className="text-[9px] font-mono text-teal group-hover:text-teal mb-3 opacity-80 uppercase tracking-tighter">
-                                {card.meta}
-                            </p>
-                        )}
                         <span className="border border-carbon text-carbon group-hover:border-paper group-hover:bg-paper group-hover:text-carbon text-[10px] font-bold py-2 px-4 rounded-full uppercase tracking-widest font-mono transition-colors inline-block">
                             Access Node
                         </span>
